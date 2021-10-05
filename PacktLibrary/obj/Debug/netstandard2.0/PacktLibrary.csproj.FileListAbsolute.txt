@@ -1,0 +1,9 @@
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacktLibrary/bin/Debug/netstandard2.0/PacktLibrary.deps.json
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacktLibrary/bin/Debug/netstandard2.0/PacktLibrary.dll
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacktLibrary/bin/Debug/netstandard2.0/PacktLibrary.pdb
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacktLibrary/obj/Debug/netstandard2.0/PacktLibrary.csprojAssemblyReference.cache
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacktLibrary/obj/Debug/netstandard2.0/PacktLibrary.AssemblyInfoInputs.cache
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacktLibrary/obj/Debug/netstandard2.0/PacktLibrary.AssemblyInfo.cs
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacktLibrary/obj/Debug/netstandard2.0/PacktLibrary.csproj.CoreCompileInputs.cache
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacktLibrary/obj/Debug/netstandard2.0/PacktLibrary.dll
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacktLibrary/obj/Debug/netstandard2.0/PacktLibrary.pdb
