@@ -77,6 +77,9 @@ namespace PeopleApp
             WriteLine();
             WriteLine($"{bob.Name} is a {Person.Species}");
 
+            WriteLine();
+            WriteLine($"{bob.Name} was born on {bob.HomePlanet}");
+
         }
     }
 }
