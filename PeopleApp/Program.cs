@@ -96,6 +96,43 @@ namespace PeopleApp
                 arg1: gunny.HomePlanet,
                 arg2: gunny.Instantiated
             );
+
+            WriteLine();
+            bob.WriteToConsole();
+            WriteLine(bob.GetOrigin());
+
+            WriteLine();
+            // Tuple calling
+            (string,int) fruit = bob.GetFruit();
+            WriteLine($"{fruit.Item1},{fruit.Item2} there are");
+            var fruitNamed = bob.GetNamedFruit();
+            WriteLine($"There are {fruitNamed.Number} {fruitNamed.Name}");
+
+            WriteLine();
+            // Tuple name inference
+            var thing1 = ("Neville",4);
+            WriteLine($"{thing1.Item1} has {thing1.Item2} children");
+            var thing2 = (bob.Name,bob.Children.Count);
+            WriteLine($"{thing2.Name} has {thing2.Count} children");
+
+            WriteLine();
+            // Deconstructing Tuples
+            (string fruitName,int fruitNumber)= bob.GetFruit();
+            WriteLine($"Deconstructed: {fruitName}, {fruitNumber}");
+
+            WriteLine();
+            // Defining and passing parameters to method
+            WriteLine(bob.SayHello());
+            WriteLine(bob.SayHello("Emily"));
+
+            WriteLine();
+            // Passing optional parameters
+            WriteLine(bob.OptionalParameters());
+            WriteLine(bob.OptionalParameters("Jump!",98.5));
+            WriteLine(bob.OptionalParameters(number:52.7,command:"Hide!"));
+            WriteLine(bob.OptionalParameters("Poke!",active:false));
+
+            WriteLine();
         }
     }
 }
