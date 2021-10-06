@@ -133,6 +133,37 @@ namespace PeopleApp
             WriteLine(bob.OptionalParameters("Poke!",active:false));
 
             WriteLine();
+            int a = 10;
+            int b = 20;
+            int c = 30;
+            WriteLine($"Before: a = {a}, b = {b}, c = {c}");
+
+            bob.PassingParameters(a,ref b, out c);
+            WriteLine($"After: a = {a}, b = {b}, c = {c}");
+
+            WriteLine();
+            int d = 10;
+            int e = 20;
+            WriteLine($"Before: d = {d}, e = {e}, f doesn't exist yet! ");
+            bob.PassingParameters(d,ref e, out int f);
+            WriteLine($"After: d = {d}, e = {e}, f = {f}");
+
+            WriteLine();
+            // Controlling access with properties and indexers
+            var sam = new Person{
+                Name = "Sam",
+                DateOfBirth = new DateTime(1991,4,7)
+            };
+            WriteLine(sam.Origin);
+            WriteLine(sam.Greeting);
+            WriteLine(sam.Age);
+
+            WriteLine();
+            // Defining settable property 
+            sam.FavoriteIceCream = "Chocolate Fudge";
+            WriteLine($"Sam's favorite ice-cream flavour is {sam.FavoriteIceCream}.");
+            sam.FavoritePrimaryColor ="Red";
+            WriteLine($"Sam's favorite primary color is {sam.FavoritePrimaryColor}");
         }
     }
 }

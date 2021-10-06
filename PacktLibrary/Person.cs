@@ -4,7 +4,7 @@ using static System.Console;
 
 namespace Packt.Shared
 {
-    public class Person : object
+    public partial class Person : object
     {
         public string Name;
         public DateTime DateOfBirth;
@@ -70,6 +70,18 @@ namespace Packt.Shared
                 arg1:number,
                 arg2:active
             );
+        }
+
+        // Controlling how parameters are passed
+        public void PassingParameters (int x ,ref int y, out int z)
+        {
+            //out parameters cannot have a default
+            //And must be initialized inside the method
+            z =99;
+            // increment each parameter
+            x++;
+            y++;
+            z++;
         }
     }
 }
