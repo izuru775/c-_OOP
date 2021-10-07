@@ -103,21 +103,21 @@ namespace PeopleApp
 
             WriteLine();
             // Tuple calling
-            (string,int) fruit = bob.GetFruit();
+            (string, int) fruit = bob.GetFruit();
             WriteLine($"{fruit.Item1},{fruit.Item2} there are");
             var fruitNamed = bob.GetNamedFruit();
             WriteLine($"There are {fruitNamed.Number} {fruitNamed.Name}");
 
             WriteLine();
             // Tuple name inference
-            var thing1 = ("Neville",4);
+            var thing1 = ("Neville", 4);
             WriteLine($"{thing1.Item1} has {thing1.Item2} children");
-            var thing2 = (bob.Name,bob.Children.Count);
+            var thing2 = (bob.Name, bob.Children.Count);
             WriteLine($"{thing2.Name} has {thing2.Count} children");
 
             WriteLine();
             // Deconstructing Tuples
-            (string fruitName,int fruitNumber)= bob.GetFruit();
+            (string fruitName, int fruitNumber) = bob.GetFruit();
             WriteLine($"Deconstructed: {fruitName}, {fruitNumber}");
 
             WriteLine();
@@ -128,9 +128,9 @@ namespace PeopleApp
             WriteLine();
             // Passing optional parameters
             WriteLine(bob.OptionalParameters());
-            WriteLine(bob.OptionalParameters("Jump!",98.5));
-            WriteLine(bob.OptionalParameters(number:52.7,command:"Hide!"));
-            WriteLine(bob.OptionalParameters("Poke!",active:false));
+            WriteLine(bob.OptionalParameters("Jump!", 98.5));
+            WriteLine(bob.OptionalParameters(number: 52.7, command: "Hide!"));
+            WriteLine(bob.OptionalParameters("Poke!", active: false));
 
             WriteLine();
             int a = 10;
@@ -138,21 +138,22 @@ namespace PeopleApp
             int c = 30;
             WriteLine($"Before: a = {a}, b = {b}, c = {c}");
 
-            bob.PassingParameters(a,ref b, out c);
+            bob.PassingParameters(a, ref b, out c);
             WriteLine($"After: a = {a}, b = {b}, c = {c}");
 
             WriteLine();
             int d = 10;
             int e = 20;
             WriteLine($"Before: d = {d}, e = {e}, f doesn't exist yet! ");
-            bob.PassingParameters(d,ref e, out int f);
+            bob.PassingParameters(d, ref e, out int f);
             WriteLine($"After: d = {d}, e = {e}, f = {f}");
 
             WriteLine();
             // Controlling access with properties and indexers
-            var sam = new Person{
+            var sam = new Person
+            {
                 Name = "Sam",
-                DateOfBirth = new DateTime(1991,4,7)
+                DateOfBirth = new DateTime(1991, 4, 7)
             };
             WriteLine(sam.Origin);
             WriteLine(sam.Greeting);
@@ -162,13 +163,13 @@ namespace PeopleApp
             // Defining settable property 
             sam.FavoriteIceCream = "Chocolate Fudge";
             WriteLine($"Sam's favorite ice-cream flavour is {sam.FavoriteIceCream}.");
-            sam.FavoritePrimaryColor ="Red";
+            sam.FavoritePrimaryColor = "Red";
             WriteLine($"Sam's favorite primary color is {sam.FavoritePrimaryColor}");
 
             WriteLine();
             // Indexers
-            sam.Children.Add(new Person {Name = "Charlie"});
-            sam.Children.Add(new Person {Name = "Ella"});
+            sam.Children.Add(new Person { Name = "Charlie" });
+            sam.Children.Add(new Person { Name = "Ella" });
             WriteLine($"Sam's first child is {sam.Children[0].Name}");
             WriteLine($"Sam's second child is {sam.Children[1].Name}");
             WriteLine($"Sam's first child is {sam[0].Name}");
@@ -176,8 +177,8 @@ namespace PeopleApp
 
 
             WriteLine();
-             WriteLine();
-              WriteLine();
+            WriteLine();
+            WriteLine();
 
             // Pattern Matching with objects
             object[] passengers ={
@@ -189,20 +190,20 @@ namespace PeopleApp
             };
             foreach (object passenger in passengers)
             {
-                Decimal flightCost = passenger switch 
+                Decimal flightCost = passenger switch
                 {
                     /* FirstClassPassenger p when p.AirMiles > 35000 => 1500M,
                     FirstClassPassenger p when p.AirMiles > 15000 => 1750M,
                     FirstClassPassenger  => 2000M, */
                     FirstClassPassenger p => p.AirMiles switch
                     {
-                      > 35000 => 1500M,
-                      > 15000 => 1720M,
-                      _ => 2000M  
-                        
+                        > 35000 => 1500M,
+                        > 15000 => 1720M,
+                        _ => 2000M
+
                     },
                     BusinessClassPassenger _ => 1000M,
-                    CoachClassPassenger p when p.CarryOnKG <10.0 => 500M,
+                    CoachClassPassenger p when p.CarryOnKG < 10.0 => 500M,
                     CoachClassPassenger _ => 650M,
                     _ => 800M
                 };
@@ -210,8 +211,8 @@ namespace PeopleApp
             }
 
             WriteLine();
-             WriteLine();
-              WriteLine();
+            WriteLine();
+            WriteLine();
 
             // Init-only properties
             var jeff = new ImmutablePerson
@@ -220,6 +221,33 @@ namespace PeopleApp
                 LastName = "Winger"
             };
             // jeff.FirstName ="Geoff";
+            
+            /* 
+            
+             */
+
+            // Records
+            var car = new ImmutableVehicle
+            {
+                Brand = "Mazda MX-5 RF",
+                Color = "Soul Red Crystal Metalic",
+                Wheels = 4
+            };
+            var repaintedCar = car with { Color = "Polymetal Grey Metallic" };
+            WriteLine(
+            "The original color was {0}, new color is {1}",
+            arg0:car.Color,
+            arg1:repaintedCar.Color
+            );
+
+            WriteLine();
+            WriteLine();
+            WriteLine();
+
+            var oscar = new ImmutableAnimal("Oscar","Labrador");
+            var (who,what) = oscar;
+            WriteLine($"{who} is a {what}");
+            
         }
     }
 }
