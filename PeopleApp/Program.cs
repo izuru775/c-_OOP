@@ -208,6 +208,18 @@ namespace PeopleApp
                 };
                 WriteLine($"Flight cost {flightCost:C} for {passenger}");
             }
+
+            WriteLine();
+             WriteLine();
+              WriteLine();
+
+            // Init-only properties
+            var jeff = new ImmutablePerson
+            {
+                FirstName = "Jeff",
+                LastName = "Winger"
+            };
+            // jeff.FirstName ="Geoff";
         }
     }
 }
