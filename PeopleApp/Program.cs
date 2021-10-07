@@ -221,7 +221,7 @@ namespace PeopleApp
                 LastName = "Winger"
             };
             // jeff.FirstName ="Geoff";
-            
+
             /* 
             
              */
@@ -236,18 +236,48 @@ namespace PeopleApp
             var repaintedCar = car with { Color = "Polymetal Grey Metallic" };
             WriteLine(
             "The original color was {0}, new color is {1}",
-            arg0:car.Color,
-            arg1:repaintedCar.Color
+            arg0: car.Color,
+            arg1: repaintedCar.Color
             );
 
             WriteLine();
             WriteLine();
             WriteLine();
 
-            var oscar = new ImmutableAnimal("Oscar","Labrador");
-            var (who,what) = oscar;
+            var oscar = new ImmutableAnimal("Oscar", "Labrador");
+            var (who, what) = oscar;
             WriteLine($"{who} is a {what}");
+
+            /* 
+            New Chapter - Implementing Interfaces and Inheriting Classes 
+            */
+            WriteLine();
+            WriteLine();
+            WriteLine();
+
+            var harry = new Person { Name = "Harry" };
+            var mary = new Person { Name = "Mary" };
+            var jill = new Person { Name = "Jill" };
+            // Call instance method
+            var baby1 = mary.ProcreateWith(harry);
+            baby1.Name ="Gary";
+
+            // Call static method
+            var baby2 = Person.Procreate(harry,jill);
+            // call an operator
+            var baby3 = harry*(mary);
+            WriteLine($"{harry.Name} has {harry.Children.Count}");
+            WriteLine($"{mary.Name} has {mary.Children.Count}");
+            WriteLine($"{jill.Name} has {jill.Children.Count}");
+            WriteLine(format:"{0} first child is named \"{1}\"",
+            arg0:harry.Name,
+            arg1:harry.Children[0].Name);
+
+            WriteLine();
+            WriteLine();
+            WriteLine();
             
+
         }
     }
 }
