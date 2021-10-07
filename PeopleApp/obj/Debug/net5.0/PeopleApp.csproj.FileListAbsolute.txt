@@ -16,3 +16,5 @@
 /Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PeopleApp/obj/Debug/net5.0/ref/PeopleApp.dll
 /Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PeopleApp/obj/Debug/net5.0/PeopleApp.pdb
 /Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PeopleApp/obj/Debug/net5.0/PeopleApp.genruntimeconfig.cache
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PeopleApp/bin/Debug/net5.0/PacketLibrary9.dll
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PeopleApp/bin/Debug/net5.0/PacketLibrary9.pdb

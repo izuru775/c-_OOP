@@ -5,5 +5,6 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="../PacktLibrary/PacktLibrary.csproj"/>
+    <ProjectReference Include="../PacketLibrary9/PacketLibrary9.csproj"/>
   </ItemGroup>
 </Project>

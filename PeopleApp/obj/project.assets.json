@@ -2,6 +2,16 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "PacketLibrary9/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/PacketLibrary9.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PacketLibrary9.dll": {}
+        }
+      },
       "PacktLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -15,6 +25,11 @@
     }
   },
   "libraries": {
+    "PacketLibrary9/1.0.0": {
+      "type": "project",
+      "path": "../PacketLibrary9/PacketLibrary9.csproj",
+      "msbuildProject": "../PacketLibrary9/PacketLibrary9.csproj"
+    },
     "PacktLibrary/1.0.0": {
       "type": "project",
       "path": "../PacktLibrary/PacktLibrary.csproj",
@@ -23,6 +38,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "PacketLibrary9 >= 1.0.0",
       "PacktLibrary >= 1.0.0"
     ]
   },
@@ -55,6 +71,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacketLibrary9/PacketLibrary9.csproj": {
+              "projectPath": "/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacketLibrary9/PacketLibrary9.csproj"
+            },
             "/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacktLibrary/PacktLibrary.csproj": {
               "projectPath": "/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacktLibrary/PacktLibrary.csproj"
             }

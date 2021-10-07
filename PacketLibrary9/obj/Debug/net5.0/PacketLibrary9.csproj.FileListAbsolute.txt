@@ -1,0 +1,12 @@
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacketLibrary9/bin/Debug/net5.0/PacketLibrary9.deps.json
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacketLibrary9/bin/Debug/net5.0/PacketLibrary9.dll
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacketLibrary9/bin/Debug/net5.0/ref/PacketLibrary9.dll
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacketLibrary9/bin/Debug/net5.0/PacketLibrary9.pdb
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacketLibrary9/obj/Debug/net5.0/PacketLibrary9.csprojAssemblyReference.cache
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacketLibrary9/obj/Debug/net5.0/PacketLibrary9.GeneratedMSBuildEditorConfig.editorconfig
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacketLibrary9/obj/Debug/net5.0/PacketLibrary9.AssemblyInfoInputs.cache
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacketLibrary9/obj/Debug/net5.0/PacketLibrary9.AssemblyInfo.cs
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacketLibrary9/obj/Debug/net5.0/PacketLibrary9.csproj.CoreCompileInputs.cache
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacketLibrary9/obj/Debug/net5.0/PacketLibrary9.dll
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacketLibrary9/obj/Debug/net5.0/ref/PacketLibrary9.dll
+/Users/isuruadikaram/Desktop/C#_OOP/Chapter5/PacketLibrary9/obj/Debug/net5.0/PacketLibrary9.pdb
